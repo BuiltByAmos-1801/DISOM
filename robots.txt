@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://disomthetribalshub.great-site.net/sitemap.xml

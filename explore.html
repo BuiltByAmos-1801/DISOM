@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Jharkhand — Communities, Culture & Heritage | DISOM</title>
+  <meta name="description" content="Explore Jharkhand's tribal digital museum: communities, languages, festivals, art, music, crafts, architecture, and living oral traditions.">
+  <link rel="canonical" href="./explore.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Explore Jharkhand — Communities, Culture & Heritage | DISOM">
+  <meta property="og:description" content="Discover Jharkhand's 8 major Adivasi communities, sacred forests, festivals, and material culture archives.">
+  <meta property="og:image" content="assets/images/hero/hero-forest.jpg">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="DISOM Home">
+        <img src="assets/logo.png" alt="DISOM Emblem" class="brand-logo-img">
+        <div class="brand-logo-text">
+          <span class="brand-name">DISOM</span>
+          <span class="brand-subtitle">Jharkhand Tribal Digital Museum</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="explore.html" class="nav-link active" aria-current="page">Explore</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="cart-trigger-btn" aria-label="View Shopping Basket" id="headerCartBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+        <a href="explore.html" class="btn btn-primary btn-sm">Explore Museum</a>
+
+        <button type="button" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-menu">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="explore.html" class="mobile-nav-link active">Explore</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="marketplace.html" class="mobile-nav-link">Marketplace</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="explore.html" class="btn btn-primary" style="width: 100%;">Explore Museum</a>
+        <button type="button" class="btn btn-secondary cart-trigger-btn" style="width: 100%;">View Basket</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- SUB-HERO -->
+    <section class="sub-hero" aria-label="Explore Header" style="position: relative;">
+      <div style="position: absolute; inset: 0; z-index: 1; opacity: 0.22;">
+        <img src="assets/images/hero/hero-forest.jpg" alt="Sal forest canopy in Chotanagpur" style="width: 100%; height: 100%; object-fit: cover;" onerror="handleImageError(this, 'Explore Forest')">
+      </div>
+      <div class="sub-hero-pattern"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="sub-hero-content">
+          <span class="tagline">Digital Museum Archive</span>
+          <h1 class="sub-hero-title">Explore Jharkhand</h1>
+          <p class="lead" style="color: rgba(245, 240, 230, 0.88); margin-bottom: 2rem;">
+            Communities, languages, festivals, art, music, crafts, food, architecture and changing lives across the plateau.
+          </p>
+
+          <!-- Real-Time Museum Search Bar -->
+          <div style="max-width: 620px;">
+            <div class="search-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="search" id="museumSearchInput" class="search-input" placeholder="Search exhibits, festivals, crafts, or communities (e.g., Sohrai, Dokra, Munda, Sarhul)..." aria-label="Search digital museum">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="sohrai-divider" role="presentation" aria-hidden="true"></div>
+
+    <!-- MUSEUM CATEGORY FILTER BAR -->
+    <section style="background: var(--cream); padding: 1.25rem 0; border-bottom: 1px solid var(--border);" aria-label="Archive Categories">
+      <div class="container">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;" role="tablist">
+            <button type="button" class="btn btn-sm btn-forest museum-filter-btn active" data-category="all">All Exhibits</button>
+            <button type="button" class="btn btn-sm btn-outline museum-filter-btn" data-category="communities">Communities & Identities</button>
+            <button type="button" class="btn btn-sm btn-outline museum-filter-btn" data-category="forest">Forest & Landscape</button>
+            <button type="button" class="btn btn-sm btn-outline museum-filter-btn" data-category="festivals">Festivals & Calendars</button>
+            <button type="button" class="btn btn-sm btn-outline museum-filter-btn" data-category="crafts">Craft & Material Culture</button>
+            <button type="button" class="btn btn-sm btn-outline museum-filter-btn" data-category="music">Music, Dance & Instruments</button>
+            <button type="button" class="btn btn-sm btn-outline museum-filter-btn" data-category="oral">Oral Histories</button>
+          </div>
+          <div id="museumResultCount" style="font-size: 0.88rem; color: var(--forest); font-weight: 600;">
+            12 exhibits found
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: COMMUNITY DIRECTORY (8 Communities) -->
+    <section class="section" id="communities">
+      <div class="container">
+        <div class="section-header">
+          <span class="tagline">Community Directory</span>
+          <h2 class="section-title">The Peoples of Jharkhand</h2>
+          <p class="section-subtitle">
+            An introduction to eight major indigenous communities. Each profile highlights customary governance, language roots, and distinct material cultures.
+          </p>
+        </div>
+
+        <div class="card-grid-4">
+          <!-- 1. Santhal -->
+          <div class="community-card museum-card-item" data-category="communities" data-tags="santhal santal austroasiatic ol chiki baha sohrai">
+            <div class="community-card-media">
+              <img src="assets/images/communities/santhal.jpg" alt="Santhal Community Cultural Portrait" onerror="handleImageError(this, 'Santhal Community')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title museum-item-title">Santhal / Santal</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Ol Chiki</span>
+                <span class="community-meta-tag">Manjhi Governance</span>
+                <span class="community-meta-tag">Baha & Sohrai</span>
+              </div>
+              <p class="community-card-text museum-item-desc">
+                Largest indigenous group in Jharkhand, primarily residing in Santhal Parganas. Renowned for their written script Ol Chiki, rich epic oral poetry (Karam Binti), and vibrant Sohrai clay wall murals.
+              </p>
+              <div class="community-card-footer">
+                <span class="badge badge-prototype">Documentation in progress</span>
+                <a href="#sources" class="btn btn-outline btn-sm">Explore Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Munda -->
+          <div class="community-card museum-card-item" data-category="communities" data-tags="munda austroasiatic khunti sasandiri birsa karam">
+            <div class="community-card-media">
+              <img src="assets/images/communities/munda.jpg" alt="Munda Community Cultural Portrait" onerror="handleImageError(this, 'Munda Community')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title museum-item-title">Munda</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Mundari</span>
+                <span class="community-meta-tag">Parha System</span>
+                <span class="community-meta-tag">Sasandiri Stones</span>
+              </div>
+              <p class="community-card-text museum-item-desc">
+                Ancestral dwellers of Ranchi and Khunti districts. Pioneers of the historic Parha confederal system and megalithic stone memorial burial grounds known as Sasandiri.
+              </p>
+              <div class="community-card-footer">
+                <span class="badge badge-prototype">Documentation in progress</span>
+                <a href="#sources" class="btn btn-outline btn-sm">Explore Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Oraon -->
+          <div class="community-card museum-card-item" data-category="communities" data-tags="oraon kurukh dravidian sarhul dhumkuria mandar">
+            <div class="community-card-media">
+              <img src="assets/images/communities/oraon.jpg" alt="Oraon Community Cultural Portrait" onerror="handleImageError(this, 'Oraon Community')">
+              <span class="community-card-badge">Dravidian</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title museum-item-title">Oraon / Kurukh</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Kurukh</span>
+                <span class="community-meta-tag">Sarhul Festival</span>
+                <span class="community-meta-tag">Dhumkuria</span>
+              </div>
+              <p class="community-card-text museum-item-desc">
+                Speakers of the ancient Kurukh Dravidian tongue. Known for the cultural youth academy institution Dhumkuria, agricultural water-management mastery, and the spring Sarhul ceremonies.
+              </p>
+              <div class="community-card-footer">
+                <span class="badge badge-prototype">Documentation in progress</span>
+                <a href="#sources" class="btn btn-outline btn-sm">Explore Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Ho -->
+          <div class="community-card museum-card-item" data-category="communities" data-tags="ho warang chiti austroasiatic mage parab kolhan manki munda">
+            <div class="community-card-media">
+              <img src="assets/images/communities/ho.jpg" alt="Ho Community Cultural Portrait" onerror="handleImageError(this, 'Ho Community')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title museum-item-title">Ho</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Warang Chiti</span>
+                <span class="community-meta-tag">Kolhan Autonomy</span>
+                <span class="community-meta-tag">Mage Parab</span>
+              </div>
+              <p class="community-card-text museum-item-desc">
+                Concentrated in the dense sal tracts of West Singhbhum. Stewards of the Manki-Munda governance framework and the historic Warang Chiti script devised by scholar Lako Bodra.
+              </p>
+              <div class="community-card-footer">
+                <span class="badge badge-prototype">Documentation in progress</span>
+                <a href="#sources" class="btn btn-outline btn-sm">Explore Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Kharia -->
+          <div class="community-card museum-card-item" data-category="communities" data-tags="kharia hill kharia austroasiatic forest simdega gathering">
+            <div class="community-card-media">
+              <img src="assets/images/communities/kharia.jpg" alt="Kharia Community Cultural Portrait" onerror="handleImageError(this, 'Kharia Community')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title museum-item-title">Kharia</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Dudh & Dhelki</span>
+                <span class="community-meta-tag">Simdega Plateau</span>
+                <span class="community-meta-tag">Forest Botanicals</span>
+              </div>
+              <p class="community-card-text museum-item-desc">
+                Divided traditionally into Hill Kharia, Dhelki, and Dudh Kharia branches. Unrivalled botanical ethnoknowledge of medicinal plants and sustainable forest foraging practices.
+              </p>
+              <div class="community-card-footer">
+                <span class="badge badge-prototype">Documentation in progress</span>
+                <a href="#sources" class="btn btn-outline btn-sm">Explore Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Birhor -->
+          <div class="community-card museum-card-item" data-category="communities" data-tags="birhor nomadic chop creeper rope forest austroasiatic">
+            <div class="community-card-media">
+              <img src="assets/images/communities/birhor.jpg" alt="Birhor Community Cultural Portrait" onerror="handleImageError(this, 'Birhor Community')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title museum-item-title">Birhor</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">"People of the Forest"</span>
+                <span class="community-meta-tag">Chop Cordage</span>
+                <span class="community-meta-tag">Tanda Settlements</span>
+              </div>
+              <p class="community-card-text museum-item-desc">
+                Literally 'People of the Forest'. Traditionally nomadic hunter-gatherers and master artisans of high-tensile ropes and hunting nets woven from wild Bauhinia (Chop) creeper fibres.
+              </p>
+              <div class="community-card-footer">
+                <span class="badge badge-prototype">Documentation in progress</span>
+                <a href="#sources" class="btn btn-outline btn-sm">Explore Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Mahli -->
+          <div class="community-card museum-card-item" data-category="communities" data-tags="mahli bamboo basketry craft austroasiatic winnowing">
+            <div class="community-card-media">
+              <img src="assets/images/communities/mahli.jpg" alt="Mahli Community Cultural Portrait" onerror="handleImageError(this, 'Mahli Community')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title museum-item-title">Mahli</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Bamboo Specialists</span>
+                <span class="community-meta-tag">Daura & Sup</span>
+                <span class="community-meta-tag">Agricultural Craft</span>
+              </div>
+              <p class="community-card-text museum-item-desc">
+                Specialized artisanal bamboo craft workers whose winnowing baskets (Sup), storage bins (Daura), and umbrella structures form the functional backbone of tribal village agriculture.
+              </p>
+              <div class="community-card-footer">
+                <span class="badge badge-prototype">Documentation in progress</span>
+                <a href="#sources" class="btn btn-outline btn-sm">Explore Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Bhumij -->
+          <div class="community-card museum-card-item" data-category="communities" data-tags="bhumij sardar austroasiatic potka brass cultivation">
+            <div class="community-card-media">
+              <img src="assets/images/communities/bhumij.jpg" alt="Bhumij Community Cultural Portrait" onerror="handleImageError(this, 'Bhumij Community')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title museum-item-title">Bhumij</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">"Children of the Soil"</span>
+                <span class="community-meta-tag">Sardar Leaders</span>
+                <span class="community-meta-tag">Sacred Groves</span>
+              </div>
+              <p class="community-card-text museum-item-desc">
+                Inhabiting Manbhum and Dhalbhum plateau tracts. Celebrated for clearing early forest plateaus for terrace agriculture, heroic resistance under Ganga Narayan Singh, and brass metalwork.
+              </p>
+              <div class="community-card-footer">
+                <span class="badge badge-prototype">Documentation in progress</span>
+                <a href="#sources" class="btn btn-outline btn-sm">Explore Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: EXHIBIT ARCHIVE CARDS (Live Filtered Categories) -->
+    <section class="section section-cream" id="exhibit-archive">
+      <div class="container">
+        <div class="section-header">
+          <span class="tagline">Themed Galleries</span>
+          <h2 class="section-title">Curated Museum Exhibits</h2>
+          <p class="section-subtitle">Deep dive into specific artifacts, seasonal ceremonies, sacred landscapes, and metallurgical arts.</p>
+        </div>
+
+        <div class="card-grid-3" id="museumExhibitsGrid">
+          <!-- Exhibit 1: Sohrai Murals -->
+          <div class="feature-card museum-card-item" data-category="crafts" data-tags="sohrai mural painting art natural pigment hazaribagh cattle harvest">
+            <div style="margin-bottom: 1.25rem; border-radius: var(--radius-sm); overflow: hidden; height: 180px;">
+              <img src="assets/images/culture/sohrai-art.jpg" alt="Sohrai wall art painting" style="width: 100%; height: 100%; object-fit: cover;" onerror="handleImageError(this, 'Sohrai Exhibit')">
+            </div>
+            <span class="badge badge-gold" style="align-self: flex-start; margin-bottom: 0.75rem;">Craft & Material Culture</span>
+            <h3 class="museum-item-title">Sohrai & Khovar Clay Murals</h3>
+            <p class="museum-item-desc">
+              Painted by women artists onto mud walls following the winter paddy harvest. Combines tooth-twigs and cloth rags with four wild earth clays (black manganese, yellow ochre, red hematite, white kaolin).
+            </p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-light); font-size: 0.8rem; color: var(--muted);">
+              Documented in Hazaribagh & Santhal Parganas
+            </div>
+          </div>
+
+          <!-- Exhibit 2: Dokra Metallurgy -->
+          <div class="feature-card museum-card-item" data-category="crafts" data-tags="dokra bronze bell metal lost wax casting metallurgy deoghar">
+            <div style="margin-bottom: 1.25rem; border-radius: var(--radius-sm); overflow: hidden; height: 180px;">
+              <img src="assets/images/culture/dokra-craft.jpg" alt="Dokra lost wax bell metal" style="width: 100%; height: 100%; object-fit: cover;" onerror="handleImageError(this, 'Dokra Exhibit')">
+            </div>
+            <span class="badge badge-gold" style="align-self: flex-start; margin-bottom: 0.75rem;">Craft & Material Culture</span>
+            <h3 class="museum-item-title">Dokra Lost-Wax Metallurgy</h3>
+            <p class="museum-item-desc">
+              Hollow-core bell metal casting dating back to the Indus-Harappan era. Artisans wind fine natural beeswax threads over a river-clay core before encasing and pouring molten brass.
+            </p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-light); font-size: 0.8rem; color: var(--muted);">
+              Artisan Guilds: Dumka, Deoghar, Saraikela
+            </div>
+          </div>
+
+          <!-- Exhibit 3: Terracotta Mandar -->
+          <div class="feature-card museum-card-item" data-category="music" data-tags="mandar drum terracotta percussion music nagada oraon munda dance">
+            <div style="margin-bottom: 1.25rem; border-radius: var(--radius-sm); overflow: hidden; height: 180px;">
+              <img src="assets/images/culture/mandar-drum.jpg" alt="Terracotta Mandar drum" style="width: 100%; height: 100%; object-fit: cover;" onerror="handleImageError(this, 'Mandar Exhibit')">
+            </div>
+            <span class="badge badge-gold" style="align-self: flex-start; margin-bottom: 0.75rem;">Music, Dance & Instruments</span>
+            <h3 class="museum-item-title">The Terracotta Mandar Drum</h3>
+            <p class="museum-item-desc">
+              The acoustic heartbeat of Jharkhand. Unlike flat frame drums, the clay body of the Mandar creates deep sub-harmonic resonance that carries across valley akhra dance grounds for miles.
+            </p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-light); font-size: 0.8rem; color: var(--muted);">
+              Clay Tuning: Iron-slag paste & goat hide
+            </div>
+          </div>
+
+          <!-- Exhibit 4: Sarna Groves -->
+          <div class="feature-card museum-card-item" data-category="forest" data-tags="sarna sacred grove sal forest chotanagpur ecology jaherthan">
+            <div style="margin-bottom: 1.25rem; border-radius: var(--radius-sm); overflow: hidden; height: 180px;">
+              <img src="assets/images/culture/sal-forest.jpg" alt="Sarna sacred Sal tree grove" style="width: 100%; height: 100%; object-fit: cover;" onerror="handleImageError(this, 'Sarna Exhibit')">
+            </div>
+            <span class="badge badge-gold" style="align-self: flex-start; margin-bottom: 0.75rem;">Forest, Plateau & Village</span>
+            <h3 class="museum-item-title">Sarna: The Sacred Sal Sanctuaries</h3>
+            <p class="museum-item-desc">
+              Virgin patches of indigenous Sal forest where no tree may be felled. Serves as spiritual dwelling for Gaon Deoti (village guardians) and ecological seed-banks preserving endemic flora.
+            </p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-light); font-size: 0.8rem; color: var(--muted);">
+              Ecological & Spiritual Sovereignty
+            </div>
+          </div>
+
+          <!-- Exhibit 5: Sarhul Festival -->
+          <div class="feature-card museum-card-item" data-category="festivals" data-tags="sarhul festival spring sal blossom pahan worship kurukh munda">
+            <div style="margin-bottom: 1.25rem; border-radius: var(--radius-sm); overflow: hidden; height: 180px;">
+              <img src="assets/images/culture/sarhul-festival.jpg" alt="Sarhul festival Sal flower feast" style="width: 100%; height: 100%; object-fit: cover;" onerror="handleImageError(this, 'Sarhul Exhibit')">
+            </div>
+            <span class="badge badge-gold" style="align-self: flex-start; margin-bottom: 0.75rem;">Festivals & Calendars</span>
+            <h3 class="museum-item-title">Sarhul: The Feast of Flowers</h3>
+            <p class="museum-item-desc">
+              Celebrated in Chaitra (March-April) when Sal trees erupt in aromatic pale blossoms. The village priest (Pahan) performs water divinations to forecast monsoon agricultural yield.
+            </p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-light); font-size: 0.8rem; color: var(--muted);">
+              Annual Spring Renewal Ceremony
+            </div>
+          </div>
+
+          <!-- Exhibit 6: Sasandiri Megaliths -->
+          <div class="feature-card museum-card-item" data-category="oral" data-tags="sasandiri megaliths oral history stone archaeology munda clan genealogy">
+            <div style="margin-bottom: 1.25rem; border-radius: var(--radius-sm); overflow: hidden; height: 180px;">
+              <img src="assets/images/culture/sasandiri.jpg" alt="Sasandiri stone and megalith heritage" style="width: 100%; height: 100%; object-fit: cover;" onerror="handleImageError(this, 'Sasandiri Exhibit')">
+            </div>
+            <span class="badge badge-gold" style="align-self: flex-start; margin-bottom: 0.75rem;">Oral Histories & Archaeology</span>
+            <h3 class="museum-item-title">Sasandiri: Megalithic Memory Stones</h3>
+            <p class="museum-item-desc">
+              Massive stone slabs laid flat or erected as standing menhirs (Bid-diri) to house clan bone deposits. These megalithic sites serve as incontestable oral land registry deeds in customary jurisprudence.
+            </p>
+            <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border-light); font-size: 0.8rem; color: var(--muted);">
+              Oral Genealogical Anchor in Chotanagpur
+            </div>
+          </div>
+        </div>
+
+        <!-- Empty State Notice for Search -->
+        <div id="museumEmptyState" style="display: none; text-align: center; padding: 4rem 1rem; background: var(--paper-card); border-radius: var(--radius-md); border: 1px dashed var(--border); margin-top: 2rem;">
+          <h3 style="color: var(--forest-dark); margin-bottom: 0.5rem;">No exhibits match your search</h3>
+          <p style="color: var(--muted);">Try clearing your search query or selecting "All Exhibits" from the category menu above.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SOURCES & DOCUMENTATION PHILOSOPHY -->
+    <section class="section" id="sources">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="tagline">Rigorous Methodology</span>
+          <h2 class="section-title">Sources & Documentation Framework</h2>
+          <p class="section-subtitle">How DISOM gathers, classifies, and ethically validates cultural knowledge without stereotyping.</p>
+        </div>
+
+        <div class="card-grid-4">
+          <div class="feature-card">
+            <div class="badge badge-forest" style="margin-bottom: 1rem;">Tier 1</div>
+            <h3>Documented Records</h3>
+            <p>Peer-reviewed anthropological literature, gazetteers, linguistic corpora (Grierson, Hoffman, Archer), and historical enactments like the CNT Act and PESA.</p>
+          </div>
+          <div class="feature-card">
+            <div class="badge badge-gold" style="margin-bottom: 1rem;">Tier 2</div>
+            <h3>Living Oral Histories</h3>
+            <p>Elders' recollections, songline verses, customary sayings, and clan origin genealogies recorded directly with community consent and attribution.</p>
+          </div>
+          <div class="feature-card">
+            <div class="badge badge-forest" style="margin-bottom: 1rem;">Tier 3</div>
+            <h3>Ethnographic Interpretation</h3>
+            <p>Curatorial commentary and comparative analysis, clearly flagged as institutional interpretation rather than ancestral community dogmas.</p>
+          </div>
+          <div class="feature-card">
+            <div class="badge badge-prototype" style="margin-bottom: 1rem;">Tier 4</div>
+            <h3>Community Verification</h3>
+            <p>Entries under community peer-review are labelled with prototype flags until authenticated by resident cultural practitioners and clan elders.</p>
+          </div>
+        </div>
+
+        <div style="background: var(--paper-card); border-radius: var(--radius-md); border: 1px solid var(--border); padding: 2rem; margin-top: 3rem; text-align: center;">
+          <h4 style="margin-bottom: 0.5rem; color: var(--forest-dark);">Notice a historical detail that requires nuance or correction?</h4>
+          <p style="color: var(--muted); max-width: 600px; margin: 0 auto 1.25rem;">
+            DISOM is an evolving archive. We welcome community custodians, researchers, and native speakers to contribute additions or corrections.
+          </p>
+          <a href="contact.html" class="btn btn-forest btn-sm">Submit Cultural Correction</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer Container -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3 id="cartDrawerTitle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          Your Basket <span id="cartCountHeader" style="font-size: 0.9rem; opacity: 0.8;">(0)</span>
+        </h3>
+        <button type="button" class="cart-close-btn" aria-label="Close basket drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="cart-body" id="cartDrawerBody"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal</span>
+          <span class="cart-subtotal-val" id="cartSubtotal">₹0</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <button type="button" class="btn btn-primary" style="flex: 1;" onclick="window.showToast('Checkout will be connected to a secure payment system in production.')">Proceed to Checkout</button>
+          <button type="button" class="btn btn-outline btn-sm" onclick="window.clearCart()" aria-label="Clear all items">Clear</button>
+        </div>
+        <div class="cart-checkout-notice">
+          This is a frontend prototype. Checkout will be connected to a secure payment system in production.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>DISOM</h3>
+          <p>
+            Jharkhand Tribal Digital Museum — An educational platform and fair-trade archive documenting the living heritage, crafts, and languages of Jharkhand’s Adivasi communities.
+          </p>
+          <p style="font-size: 0.8rem; margin-top: 1rem; color: var(--gold);">
+            "Stories of the forest & people."
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore Museum</a></li>
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="marketplace.html">Responsible Marketplace</a></li>
+            <li><a href="contact.html">Contact & Contribute</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Digital Museum</h4>
+          <ul class="footer-links">
+            <li><a href="explore.html#communities">Community Directory</a></li>
+            <li><a href="explore.html#festivals">Festivals & Seasons</a></li>
+            <li><a href="explore.html#crafts">Crafts & Metallurgy</a></li>
+            <li><a href="explore.html#music">Music & Instruments</a></li>
+            <li><a href="explore.html#sources">Sources & Documentation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Ethics & Heritage</h4>
+          <ul class="footer-links">
+            <li><a href="about.html#principles">The 5 Core Principles</a></li>
+            <li><a href="about.html#fair-trade">Fair-Trade Charter</a></li>
+            <li><a href="about.html#diversity">Diversity Statement</a></li>
+            <li><a href="contact.html#cultural-correction">Submit Cultural Correction</a></li>
+            <li><a href="marketplace.html#artisan-onboard">Artisan Onboarding</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 DISOM — Jharkhand Tribal Digital Museum. All rights reserved.</div>
+        <div>Educational &amp; Cultural Prototype &bull; <a href="https://builtbyamos.in/">Built by Amos</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace — DISOM | Tribal Handicrafts with Context</title>
+  <meta name="description" content="Discover authentic tribal handicrafts from Jharkhand: hand-forged Hansuli jewellery, handwoven Lal-Paad sarees, Dokra bronze, and Mandar drums with ethical context.">
+  <link rel="canonical" href="./marketplace.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Marketplace — DISOM | Tribal Handicrafts with Context">
+  <meta property="og:description" content="Responsible fair-trade commerce celebrating Jharkhand artisans. Every creation includes maker identity, materials, and community provenance.">
+  <meta property="og:image" content="assets/images/hero/marketplace-hero.jpg">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="DISOM Home">
+        <img src="assets/logo.png" alt="DISOM Emblem" class="brand-logo-img">
+        <div class="brand-logo-text">
+          <span class="brand-name">DISOM</span>
+          <span class="brand-subtitle">Jharkhand Tribal Digital Museum</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="explore.html" class="nav-link">Explore</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="marketplace.html" class="nav-link active" aria-current="page">Marketplace</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="cart-trigger-btn" aria-label="View Shopping Basket" id="headerCartBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+        <a href="explore.html" class="btn btn-primary btn-sm">Explore Museum</a>
+
+        <button type="button" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-menu">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="explore.html" class="mobile-nav-link">Explore</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="marketplace.html" class="mobile-nav-link active">Marketplace</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="explore.html" class="btn btn-primary" style="width: 100%;">Explore Museum</a>
+        <button type="button" class="btn btn-secondary cart-trigger-btn" style="width: 100%;">View Basket</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- SUB-HERO -->
+    <section class="sub-hero" aria-label="Marketplace Header" style="position: relative;">
+      <div style="position: absolute; inset: 0; z-index: 1; opacity: 0.25;">
+        <img src="assets/images/hero/marketplace-hero.jpg" alt="Tribal handicraft textiles, Dokra bronze and pottery" style="width: 100%; height: 100%; object-fit: cover;" onerror="handleImageError(this, 'Marketplace Hero')">
+      </div>
+      <div class="sub-hero-pattern"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="sub-hero-content">
+          <span class="tagline">DISOM Marketplace</span>
+          <h1 class="sub-hero-title">Tribal handicrafts with context.</h1>
+          <p class="lead" style="color: rgba(245, 240, 230, 0.9);">
+            Every craft represents generations of localized botanical, metallurgical, and weaving wisdom. Explore authentic pieces documented with maker identity, material provenance, and fair compensation.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+            <span class="badge badge-gold">Transparent Fair Trade</span>
+            <span class="badge badge-forest" style="background: rgba(255,255,255,0.1); color: var(--cream); border-color: rgba(255,255,255,0.2);">No Intermediary Markups</span>
+            <span class="badge badge-prototype" style="color: var(--gold); border-color: var(--gold-border);">Prototype Listing Catalog</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="sohrai-divider" role="presentation" aria-hidden="true"></div>
+
+    <!-- MAIN CATALOG & FILTER SECTION -->
+    <section class="section" id="catalog-section">
+      <div class="container">
+        <div class="marketplace-layout">
+          <!-- Filter Sidebar -->
+          <aside class="filter-sidebar" aria-label="Marketplace Filters">
+            <!-- Search Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Search Catalog</div>
+              <div class="search-box">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="search" id="marketplaceSearch" class="search-input" placeholder="Search craft, metal, saree..." aria-label="Search catalog items">
+              </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="filter-group">
+              <div class="filter-group-title">Category</div>
+              <div class="filter-pills" role="radiogroup" aria-label="Filter by Category">
+                <button type="button" class="filter-pill category-pill active" data-category="all">
+                  <span>All Categories</span>
+                </button>
+                <button type="button" class="filter-pill category-pill" data-category="Jewellery & Ornaments">
+                  <span>Jewellery & Ornaments</span>
+                </button>
+                <button type="button" class="filter-pill category-pill" data-category="Jewellery & Accessories">
+                  <span>Jewellery & Accessories</span>
+                </button>
+                <button type="button" class="filter-pill category-pill" data-category="Textiles & Apparel">
+                  <span>Textiles & Apparel</span>
+                </button>
+                <button type="button" class="filter-pill category-pill" data-category="Accessories & Bags">
+                  <span>Accessories & Bags</span>
+                </button>
+                <button type="button" class="filter-pill category-pill" data-category="Home Decor & Sacred Art">
+                  <span>Home Decor & Sacred Art</span>
+                </button>
+                <button type="button" class="filter-pill category-pill" data-category="Traditional Instruments">
+                  <span>Traditional Instruments</span>
+                </button>
+                <button type="button" class="filter-pill category-pill" data-category="Traditional Art">
+                  <span>Traditional Art</span>
+                </button>
+                <button type="button" class="filter-pill category-pill" data-category="Handicrafts">
+                  <span>Handicrafts</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Community Filter Pills -->
+            <div class="filter-group">
+              <div class="filter-group-title">Community / Lineage</div>
+              <div class="filter-pills" role="radiogroup" aria-label="Filter by Community">
+                <button type="button" class="filter-pill community-pill active" data-community="all">
+                  <span>All Communities</span>
+                </button>
+                <button type="button" class="filter-pill community-pill" data-community="Santhal">
+                  <span>Santhal</span>
+                </button>
+                <button type="button" class="filter-pill community-pill" data-community="Munda">
+                  <span>Munda</span>
+                </button>
+                <button type="button" class="filter-pill community-pill" data-community="Oraon">
+                  <span>Oraon</span>
+                </button>
+                <button type="button" class="filter-pill community-pill" data-community="Ho">
+                  <span>Ho</span>
+                </button>
+                <button type="button" class="filter-pill community-pill" data-community="Mahli">
+                  <span>Mahli</span>
+                </button>
+                <button type="button" class="filter-pill community-pill" data-community="Bhumij">
+                  <span>Bhumij</span>
+                </button>
+                <button type="button" class="filter-pill community-pill" data-community="Kharia">
+                  <span>Kharia</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">
+                <span>Maximum Price</span>
+                <span id="priceMaxLabel" style="color: var(--gold); font-size: 0.95rem;">₹2,000</span>
+              </div>
+              <div class="price-slider-wrap">
+                <input type="range" id="priceRangeSlider" class="price-range-slider" min="500" max="2000" step="50" value="2000" aria-label="Maximum price filter">
+                <div class="price-slider-labels">
+                  <span>₹500</span>
+                  <span>₹2,000</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reset Filters -->
+            <div style="margin-top: 1.5rem;">
+              <button type="button" class="btn btn-outline btn-sm" id="resetFiltersBtn" style="width: 100%;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                </svg>
+                Reset All Filters
+              </button>
+            </div>
+          </aside>
+
+          <!-- Catalog Main Area -->
+          <div class="catalog-main">
+            <!-- Catalog Controls Topbar -->
+            <div class="catalog-topbar">
+              <div class="catalog-stats" id="productsCount">
+                Showing 29 craft items
+              </div>
+              <div class="catalog-sort">
+                <label for="sortSelect">Sort By:</label>
+                <select id="sortSelect" class="select-custom">
+                  <option value="default">Curated (Default)</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="name-asc">Name: A to Z</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Products Grid (populated by marketplace.js) -->
+            <div class="card-grid-3" id="productsGrid">
+              <!-- Rendered via JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ARTISAN ONBOARDING FORM -->
+    <section class="section section-cream" id="artisan-onboard">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="tagline">Join the Collective</span>
+          <h2 class="section-title">Are you a maker or cooperative?</h2>
+          <p class="section-subtitle">
+            DISOM partners with independent Adivasi artisans, self-help groups (SHGs), and indigenous craft cooperatives across Jharkhand.
+          </p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div class="form-card">
+            <div class="form-notice">
+              <strong>Verification Notice:</strong> Listing on DISOM requires verification of community provenance, fair-wage practices, and authentic material origins before public catalogue publishing.
+            </div>
+
+            <form id="artisanForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="artisanName" class="form-label">Artisan / Cooperative Name <span class="required">*</span></label>
+                  <input type="text" id="artisanName" class="form-control" placeholder="e.g., Dumka Women Weavers Group" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="artisanCraft" class="form-label">Craft Specialization <span class="required">*</span></label>
+                  <input type="text" id="artisanCraft" class="form-control" placeholder="e.g., Dokra casting, Handloom weaving" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="artisanCommunity" class="form-label">Community / Lineage <span class="required">*</span></label>
+                  <input type="text" id="artisanCommunity" class="form-control" placeholder="e.g., Santhal, Munda, Mahli" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="artisanLocation" class="form-label">Village / District / Location <span class="required">*</span></label>
+                  <input type="text" id="artisanLocation" class="form-control" placeholder="e.g., Murhu, Khunti District" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="artisanEmail" class="form-label">Contact Email</label>
+                  <input type="email" id="artisanEmail" class="form-control" placeholder="name@domain.org">
+                </div>
+
+                <div class="form-group">
+                  <label for="artisanPhone" class="form-label">Phone / WhatsApp Number <span class="required">*</span></label>
+                  <input type="tel" id="artisanPhone" class="form-control" placeholder="+91 98765 43210" required>
+                </div>
+
+                <div class="form-group span-2">
+                  <label for="artisanMaterials" class="form-label">Materials & Natural Sourcing Methods <span class="required">*</span></label>
+                  <input type="text" id="artisanMaterials" class="form-control" placeholder="e.g., Local river clay, wild lac, natural madder dyes" required>
+                </div>
+
+                <div class="form-group span-2">
+                  <label for="artisanStory" class="form-label">Your Story & Creative Heritage <span class="required">*</span></label>
+                  <textarea id="artisanStory" class="form-control" placeholder="Share how this craft was learned, its importance in your community, and your pricing expectations..." required></textarea>
+                </div>
+              </div>
+
+              <div id="artisanFormStatus"></div>
+
+              <div style="margin-top: 2rem; text-align: center;">
+                <button type="submit" class="btn btn-forest btn-lg">Submit Application for Review</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PRODUCT DETAILS MODAL -->
+  <div class="modal-overlay" id="productDetailsModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close product details">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-content-split">
+        <div class="modal-gallery">
+          <img src="assets/products/prod-silver-hansuli-set.jpg" alt="Product Specimen" class="modal-main-img" id="modalProductImg" onerror="handleImageError(this, 'Product Image')">
+          <div class="modal-thumbnails" id="modalThumbnails"></div>
+          <div style="font-size: 0.75rem; color: var(--muted); text-align: center; margin-top: 0.5rem;">
+            Handmade in Jharkhand • Natural Material Provenance
+          </div>
+        </div>
+
+        <div class="modal-details">
+          <div class="modal-category" id="modalProductCategory">Jewellery & Ornaments</div>
+          <h2 class="modal-title" id="modalProductTitle">Sacred Hand-Forged Hansuli Torque Choker</h2>
+          <div class="modal-price" id="modalProductPrice">₹1,499</div>
+
+          <p id="modalProductDesc" style="font-size: 0.95rem; color: var(--ink-light); margin-bottom: 1.5rem; line-height: 1.65;">
+            Product full description and cultural narrative will be placed here.
+          </p>
+
+          <div class="modal-meta-grid">
+            <div class="modal-meta-item">
+              <strong>Community / Maker</strong>
+              <span id="modalProductCommunity">Santhal</span>
+            </div>
+            <div class="modal-meta-item">
+              <strong>Material</strong>
+              <span id="modalProductMaterial">White Bell Metal</span>
+            </div>
+            <div class="modal-meta-item">
+              <strong>Dimensions</strong>
+              <span id="modalProductDimensions">Diameter 13.5 cm</span>
+            </div>
+            <div class="modal-meta-item">
+              <strong>Provenance</strong>
+              <span id="modalProductProvenance">East Singhbhum</span>
+            </div>
+          </div>
+
+          <div class="modal-verification-box" id="modalProductVerification">
+            Prototype listing — Details to be verified with maker/community.
+          </div>
+
+          <div style="margin-top: auto; display: flex; gap: 0.75rem;">
+            <button type="button" class="btn btn-primary" id="modalAddToCartBtn" style="flex: 1;">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Shopping Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3 id="cartDrawerTitle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          Your Basket <span id="cartCountHeader" style="font-size: 0.9rem; opacity: 0.8;">(0)</span>
+        </h3>
+        <button type="button" class="cart-close-btn" aria-label="Close basket drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="cart-body" id="cartDrawerBody"></div>
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal</span>
+          <span class="cart-subtotal-val" id="cartSubtotal">₹0</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <button type="button" class="btn btn-primary" style="flex: 1;" onclick="window.showToast('Checkout will be connected to a secure payment system in production.')">Proceed to Checkout</button>
+          <button type="button" class="btn btn-outline btn-sm" onclick="window.clearCart()" aria-label="Clear all items">Clear</button>
+        </div>
+        <div class="cart-checkout-notice">
+          This is a frontend prototype. Checkout will be connected to a secure payment system in production.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>DISOM</h3>
+          <p>
+            Jharkhand Tribal Digital Museum — An educational platform and fair-trade archive documenting the living heritage, crafts, and languages of Jharkhand’s Adivasi communities.
+          </p>
+          <p style="font-size: 0.8rem; margin-top: 1rem; color: var(--gold);">
+            "Stories of the forest & people."
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore Museum</a></li>
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="marketplace.html">Responsible Marketplace</a></li>
+            <li><a href="contact.html">Contact & Contribute</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Digital Museum</h4>
+          <ul class="footer-links">
+            <li><a href="explore.html#communities">Community Directory</a></li>
+            <li><a href="explore.html#festivals">Festivals & Seasons</a></li>
+            <li><a href="explore.html#crafts">Crafts & Metallurgy</a></li>
+            <li><a href="explore.html#music">Music & Instruments</a></li>
+            <li><a href="explore.html#sources">Sources & Documentation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Ethics & Heritage</h4>
+          <ul class="footer-links">
+            <li><a href="about.html#principles">The 5 Core Principles</a></li>
+            <li><a href="about.html#fair-trade">Fair-Trade Charter</a></li>
+            <li><a href="about.html#diversity">Diversity Statement</a></li>
+            <li><a href="contact.html#cultural-correction">Submit Cultural Correction</a></li>
+            <li><a href="marketplace.html#artisan-onboard">Artisan Onboarding</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 DISOM — Jharkhand Tribal Digital Museum. All rights reserved.</div>
+        <div>Educational &amp; Cultural Prototype &bull; <a href="https://builtbyamos.in/">Built by Amos</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/marketplace.js"></script>
+</body>
+</html>

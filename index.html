@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DISOM — Jharkhand Tribal Digital Museum</title>
+  <meta name="description" content="DISOM is a digital museum, cultural archive, and fair-trade platform documenting the living heritage, languages, crafts, and communities of Jharkhand.">
+  <link rel="canonical" href="./index.html">
+
+  <!-- Open Graph / Social Sharing Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DISOM — Jharkhand Tribal Digital Museum">
+  <meta property="og:description" content="Stories of the forest & people. Documenting the living cultural heritage of Jharkhand's Adivasi communities.">
+  <meta property="og:image" content="assets/images/hero/hero-forest.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="DISOM Home">
+        <img src="assets/logo.png" alt="DISOM Emblem" class="brand-logo-img">
+        <div class="brand-logo-text">
+          <span class="brand-name">DISOM</span>
+          <span class="brand-subtitle">Jharkhand Tribal Digital Museum</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="explore.html" class="nav-link">Explore</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Cart & CTA) -->
+      <div class="nav-actions">
+        <button type="button" class="cart-trigger-btn" aria-label="View Shopping Basket" id="headerCartBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+        <a href="explore.html" class="btn btn-primary btn-sm">Explore Museum</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-Over Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-menu">
+        <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+        <li><a href="explore.html" class="mobile-nav-link">Explore</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="marketplace.html" class="mobile-nav-link">Marketplace</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="explore.html" class="btn btn-primary" style="width: 100%;">Explore Museum</a>
+        <button type="button" class="btn btn-secondary cart-trigger-btn" style="width: 100%;">View Basket</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- SECTION 1: CINEMATIC HERO BANNER -->
+    <section class="hero-cinema" aria-label="Hero Banner">
+      <div class="hero-bg-container">
+        <img src="assets/images/hero/hero-forest.jpg" alt="Atmospheric Sal forest and Chotanagpur plateau in twilight" class="hero-bg-image" onerror="handleImageError(this, 'DISOM Forest Sanctuary')">
+        <div class="hero-overlay-gradient"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            Cultural Archive & Living Heritage
+          </div>
+          <h1 class="hero-title">Stories of the forest <span>&</span> people.</h1>
+          <p class="hero-description">
+            DISOM is an independent cultural institution documenting and celebrating the vibrant, multifaceted Adivasi communities of Jharkhand. From sacred Sal groves to ancestral metallurgy and living songlines, discover living heritage with dignity and context.
+          </p>
+          <div class="hero-cta-group">
+            <a href="explore.html" class="btn btn-primary btn-lg">Explore the Museum</a>
+            <a href="marketplace.html" class="btn btn-secondary btn-lg">Discover the Marketplace</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="sohrai-divider" role="presentation" aria-hidden="true"></div>
+
+    <!-- SECTION 2: INTRODUCTION -->
+    <section class="section" id="introduction">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="tagline">A Digital Sanctuary</span>
+          <h2 class="section-title">A Living Home for Jharkhand’s Heritage</h2>
+          <p class="section-subtitle">
+            DISOM is not a static display of relics. It is an interactive digital archive dedicated to documenting ancestral wisdom, acknowledging distinct community languages, and safeguarding indigenous creative sovereignty.
+          </p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto; line-height: 1.85; font-size: 1.1rem; color: var(--ink-light); text-align: center;">
+          <p>
+            Jharkhand—the "Land of Forests"—is home to over thirty distinct indigenous communities, each shaped by unique dialects, cosmologies, musical rhythms, and seasonal ceremonies. DISOM works collaboratively to record oral narratives, document material culture, and ensure that indigenous perspectives lead their own representation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: HERITAGE OVERVIEW (6 Cards) -->
+    <section class="section section-cream" id="heritage-overview">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="tagline">Foundations of Memory</span>
+          <h2 class="section-title">Pillars of Cultural Knowledge</h2>
+          <p class="section-subtitle">Explore the six fundamental dimensions of indigenous knowledge across the Chotanagpur and Santhal Pargana plateaus.</p>
+        </div>
+
+        <div class="card-grid-3">
+          <!-- Card 1: People -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>People & Clan Lineages</h3>
+            <p>Santhal, Munda, Oraon, Ho, Kharia, Birhor, Mahli, Bhumij, and more. Each community maintains sovereign social structures, clan totems (killi/gotra), and customary assemblies.</p>
+          </div>
+
+          <!-- Card 2: Land -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 17l6-6 4 4 8-8"></path>
+                <path d="M14 7h7v7"></path>
+              </svg>
+            </div>
+            <h3>Land & Sacred Groves</h3>
+            <p>The ancient red soils, laterite hills, and pristine Sarna groves (Jaherthan) where the spirits of ancestors and nature reside under ancient Sal (Shorea robusta) canopies.</p>
+          </div>
+
+          <!-- Card 3: Craft -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+              </svg>
+            </div>
+            <h3>Craft & Material Culture</h3>
+            <p>From 4,000-year-old Dokra lost-wax bronze casting to delicate bamboo winnowing craft, hand-forged Hansuli torques, and unbleached cotton handlooms.</p>
+          </div>
+
+          <!-- Card 4: Language -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3>Languages & Scripts</h3>
+            <p>Austroasiatic (Mundari, Santhali, Ho, Kharia) and Dravidian (Kurukh) linguistic treasures, alongside historic indigenous writing systems like Ol Chiki and Warang Chiti.</p>
+          </div>
+
+          <!-- Card 5: Music -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="5.5" cy="17.5" r="2.5"></circle>
+                <circle cx="17.5" cy="15.5" r="2.5"></circle>
+                <path d="M8 17V5l12-2v12"></path>
+              </svg>
+            </div>
+            <h3>Music, Dance & Acoustic Rhythm</h3>
+            <p>The thunder of Terracotta Mandars, resonance of brass Nagadas, melodic bamboo flutes (Rutu), and communal synchronized circular dance steps honoring seasonal rebirth.</p>
+          </div>
+
+          <!-- Card 6: Festivals -->
+          <div class="feature-card">
+            <div class="feature-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </div>
+            <h3>Festivals & Ecological Calendars</h3>
+            <p>Sarhul (the festival of Sal blossoms), Karam (reverence for the sacred tree of life), Sohrai (harvest thanksgiving to cattle), and Mage Parab honoring communal renewal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ORIGINS & HISTORY (Editorial Split) -->
+    <section class="section" id="origins-history">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="editorial-media">
+            <img src="assets/images/culture/sal-forest.jpg" alt="Ancient sacred grove in Jharkhand plateau" onerror="handleImageError(this, 'Sacred Sarna Grove')">
+            <div class="editorial-media-badge">Archaeological & Oral Continuity</div>
+          </div>
+          <div class="editorial-body">
+            <span class="tagline">Chronicles of Chotanagpur</span>
+            <h2>Ancient Roots in High Plateaus</h2>
+            <p class="lead">
+              The history of Jharkhand’s indigenous peoples is etched in both the soil and unwritten songs transmitted across countless generations.
+            </p>
+            <p>
+              Megalithic burial stones (Sasandiri), prehistoric rock shelters at Isko, and metallurgical slag mounds throughout the Subarnarekha river basin demonstrate that Jharkhand has been continuously inhabited and stewarded by sophisticated agrarian and metallurgical communities for millennia.
+            </p>
+            <blockquote class="editorial-quote">
+              "We did not inherit the forest from our ancestors; we hold it in trust for those yet unborn."
+            </blockquote>
+            <p>
+              DISOM honors these oral memories alongside archaeological evidence, presenting history not through imperial conquest but through community stewardship.
+            </p>
+            <div style="margin-top: 1.75rem;">
+              <a href="explore.html" class="btn btn-outline">Explore Historical Archives</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: LIVING & COMMUNITY -->
+    <section class="section section-dark" id="living-community">
+      <div class="container">
+        <div class="editorial-split reversed">
+          <div class="editorial-media">
+            <img src="assets/images/culture/sarhul-festival.jpg" alt="Community dance during Sarhul festival" onerror="handleImageError(this, 'Living Community Festivals')">
+            <div class="editorial-media-badge">Living Community Practice</div>
+          </div>
+          <div class="editorial-body">
+            <span class="tagline">Continuity in Action</span>
+            <h2>Living Heritage, Not Frozen Relics</h2>
+            <p class="lead">
+              Indigenous heritage in Jharkhand is not locked in colonial glass vitrines. It is lived, danced, woven, and spoken every single day.
+            </p>
+            <p>
+              In every village akhra (communal dance ground), young and old gather under open skies when the seasonal drums sound. The Parha and Manki-Munda traditional village governance systems continue to arbitrate community harmony and environmental custody.
+            </p>
+            <p>
+              DISOM works to ensure this living pulse is documented with total respect, celebrating contemporary innovators, community elders, and youth language revitalizers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: FARMING & FOREST -->
+    <section class="section" id="farming-forest">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="editorial-media">
+            <img src="assets/images/culture/forest-farming.jpg" alt="Traditional terrace agriculture and forest harvesting" onerror="handleImageError(this, 'Forest Livelihoods')">
+            <div class="editorial-media-badge">Ecological Harmony</div>
+          </div>
+          <div class="editorial-body">
+            <span class="tagline">Agro-Ecological Wisdom</span>
+            <h2>The Forest as Guardian and Nourisher</h2>
+            <p class="lead">
+              For Jharkhand's Adivasis, the forest (Disom) is not mere 'timber' or 'resource'. It is a living relative that provides food, medicine, fibre, and shade.
+            </p>
+            <p>
+              Seasonal gathering of Mahua blossoms, Sal seeds, wild mushrooms (Rugi), honey, and Chop creepers operates under strict customary taboos that prevent over-exploitation. Traditional terraced rice cultivation (Don and Tanr lands) captures monsoon runoff using gravitational channels engineered across centuries.
+            </p>
+            <p>
+              By documenting these sustainable agro-ecological models, DISOM highlights indigenous climate resilience as vital knowledge for our shared global future.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CHANGE & PRESENT -->
+    <section class="section section-cream" id="change-present">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="tagline">Modern Horizons</span>
+          <h2 class="section-title">Change, Adaptability & Modern Identity</h2>
+          <p class="section-subtitle">Adivasi youth and leaders navigate contemporary universities, digital technology, and national discourse while anchoring deeply in ancestral identity.</p>
+        </div>
+
+        <div class="card-grid-3">
+          <div class="feature-card">
+            <h3>Digital Script Revitalization</h3>
+            <p>From Unicode standardization of Ol Chiki (Santhali) and Warang Chiti (Ho) to Kurukh keyboard apps, young linguists are bringing indigenous scripts into the digital century.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Artisan Cooperatives & Fair Trade</h3>
+            <p>Weaving self-help groups in Khunti, Hazaribagh, and Ghatshila are breaking exploitative middleman cycles, taking direct ownership of design, marketing, and ethical pricing.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Indigenous Legal Sovereignty</h3>
+            <p>Scholars and activists assert constitutional rights under the 5th Schedule and the Chota Nagpur Tenancy (CNT) Act, defending customary land tenure against displacement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CULTURE GALLERY (Editorial Grid) -->
+    <section class="section" id="culture-gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="tagline">Visual Archive</span>
+          <h2 class="section-title">Expressions of Earth and Spirit</h2>
+          <p class="section-subtitle">Glimpse the rich spectrum of decorative murals, metallurgy, instruments, and ceremonial adornments.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Item 1: Sohrai (Col 6) -->
+          <div class="gallery-item col-span-6">
+            <img src="assets/images/culture/sohrai-art.jpg" alt="Sohrai wall painting with natural earth pigments" onerror="handleImageError(this, 'Sohrai Folk Art')">
+            <div class="gallery-caption">
+              <h4>Sohrai & Khovar Murals</h4>
+              <p>Natural earth clay paintings created on mud home walls during the post-monsoon harvest feast.</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Dokra (Col 6) -->
+          <div class="gallery-item col-span-6">
+            <img src="assets/images/culture/dokra-craft.jpg" alt="Dokra lost-wax bell metal bronze casting" onerror="handleImageError(this, 'Dokra Metallurgy')">
+            <div class="gallery-caption">
+              <h4>Dokra Lost-Wax Bronze</h4>
+              <p>4,000-year-old metallurgical tradition casting intricate figurines from beeswax spirals and bell metal.</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Mandar (Col 4) -->
+          <div class="gallery-item col-span-4">
+            <img src="assets/images/culture/mandar-drum.jpg" alt="Handmade terracotta Mandar drum" onerror="handleImageError(this, 'Terracotta Mandar')">
+            <div class="gallery-caption">
+              <h4>Terracotta Mandar Drum</h4>
+              <p>Double-headed ceramic drum tuned with riverbed clay and iron slag.</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Lal-Paad (Col 4) -->
+          <div class="gallery-item col-span-4">
+            <img src="assets/images/culture/lal-paad-weave.jpg" alt="Handwoven Lal-Paad cotton saree" onerror="handleImageError(this, 'Lal-Paad Textile')">
+            <div class="gallery-caption">
+              <h4>Lal-Paad Handloom Weave</h4>
+              <p>Iconic red temple-border sarees woven on traditional pit looms.</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Chhau (Col 4) -->
+          <div class="gallery-item col-span-4">
+            <img src="assets/images/culture/chhau-mask.jpg" alt="Seraikela Chhau dance mask" onerror="handleImageError(this, 'Chhau Mask')">
+            <div class="gallery-caption">
+              <h4>Seraikela Chhau Masks</h4>
+              <p>Expressive masks crafted from local clay, fine muslin, and natural pigments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: JOURNEY TIMELINE -->
+    <section class="section section-cream" id="journey-timeline">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="tagline">Historical Arc</span>
+          <h2 class="section-title">From Memory to Modern Life</h2>
+          <p class="section-subtitle">Tracing the resilient path of Jharkhand’s indigenous communities across eras of autonomy, resistance, and renewal.</p>
+        </div>
+
+        <div class="timeline-track">
+          <!-- Step 1 -->
+          <div class="timeline-step left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <span class="timeline-era">Ancient Era</span>
+              <h4>Sovereign Forest Stewardship</h4>
+              <p>Megalithic Sasandiri stones demarcate clan boundaries. Communal hunting rules, sacred grove worship, and indigenous copper-bronze smelting thrive on the plateau.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-step right">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <span class="timeline-era">1765 — 1900</span>
+              <h4>Eras of Resistance & The Hul</h4>
+              <p>Led by leaders like Tilka Manjhi, Sidho-Kanho Murmu (Santhal Hul, 1855), and Birsa Munda (Ulgulan, 1899-1900), communities defend autonomy and forest rights against colonial landlords.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-step left">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <span class="timeline-era">20th Century</span>
+              <h4>Script Innovation & Cultural Renaissance</h4>
+              <p>Pandit Raghunath Murmu invents the Ol Chiki script for Santhali in 1925; Lako Bodra codifies Warang Chiti for the Ho language; Jaipal Singh Munda champions tribal self-determination.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-step right">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <span class="timeline-era">21st Century & Present</span>
+              <h4>Digital Sovereignty & Ethical Commerce</h4>
+              <p>DISOM brings curated digital archives to global audiences while supporting direct artisan economic equity and community-led documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: COMMUNITY CARDS (Santhal, Munda, Oraon, Ho) -->
+    <section class="section" id="featured-communities">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="tagline">Distinct Peoples</span>
+          <h2 class="section-title">Diverse Voices, Not a Single Monolith</h2>
+          <p class="section-subtitle">
+            There is no universal "tribal culture". Jharkhand's indigenous peoples belong to distinct language families, social orders, and spiritual traditions.
+          </p>
+        </div>
+
+        <div class="card-grid-4">
+          <!-- Santhal -->
+          <div class="community-card">
+            <div class="community-card-media">
+              <img src="assets/images/communities/santhal.jpg" alt="Santhal community cultural portrait" onerror="handleImageError(this, 'Santhal Heritage')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title">Santhal / Santal</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Ol Chiki Script</span>
+                <span class="community-meta-tag">Sohrai Mural</span>
+                <span class="community-meta-tag">Baha Parab</span>
+              </div>
+              <p class="community-card-text">
+                Renowned for their democratic Manjhi-Paraganit governance, musical poetry, distinct Ol Chiki script, and the festive Baha (Sal flower) celebration.
+              </p>
+              <div class="community-card-footer">
+                <a href="explore.html" class="btn btn-outline btn-sm">Explore Heritage &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Munda -->
+          <div class="community-card">
+            <div class="community-card-media">
+              <img src="assets/images/communities/munda.jpg" alt="Munda community cultural portrait" onerror="handleImageError(this, 'Munda Heritage')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title">Munda</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Mundari Language</span>
+                <span class="community-meta-tag">Karam Festival</span>
+                <span class="community-meta-tag">Sasandiri</span>
+              </div>
+              <p class="community-card-text">
+                Custodians of ancient megalithic Sasandiri traditions, the Munda maintain deep spiritual bonds with Singbonga and the reverence of the sacred Karam tree.
+              </p>
+              <div class="community-card-footer">
+                <a href="explore.html" class="btn btn-outline btn-sm">Explore Heritage &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Oraon -->
+          <div class="community-card">
+            <div class="community-card-media">
+              <img src="assets/images/communities/oraon.jpg" alt="Oraon community cultural portrait" onerror="handleImageError(this, 'Oraon Heritage')">
+              <span class="community-card-badge">Dravidian</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title">Oraon / Kurukh</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Kurukh Language</span>
+                <span class="community-meta-tag">Sarhul Festival</span>
+                <span class="community-meta-tag">Dhumkuria</span>
+              </div>
+              <p class="community-card-text">
+                Speakers of the Kurukh tongue, renowned for their historical youth dormitory institution (Dhumkuria) and the grand spring festival of Sarhul.
+              </p>
+              <div class="community-card-footer">
+                <a href="explore.html" class="btn btn-outline btn-sm">Explore Heritage &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ho -->
+          <div class="community-card">
+            <div class="community-card-media">
+              <img src="assets/images/communities/ho.jpg" alt="Ho community cultural portrait" onerror="handleImageError(this, 'Ho Heritage')">
+              <span class="community-card-badge">Austroasiatic</span>
+            </div>
+            <div class="community-card-content">
+              <h3 class="community-card-title">Ho</h3>
+              <div class="community-meta">
+                <span class="community-meta-tag">Warang Chiti</span>
+                <span class="community-meta-tag">Mage Parab</span>
+                <span class="community-meta-tag">Kolhan Region</span>
+              </div>
+              <p class="community-card-text">
+                Inhabiting the dense Sal forests of Kolhan, the Ho have preserved the Manki-Munda traditional leadership system and celebrate the Mage Parab harvest feast.
+              </p>
+              <div class="community-card-footer">
+                <a href="explore.html" class="btn btn-outline btn-sm">Explore Heritage &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="explore.html" class="btn btn-forest">View All 8 Community Profiles in Explore</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: MARKETPLACE INTRODUCTION -->
+    <section class="section section-dark" id="marketplace-bridge">
+      <div class="container">
+        <div class="editorial-split">
+          <div class="editorial-body">
+            <span class="tagline">Responsible Commerce</span>
+            <h2>Tribal Handicrafts With Real Context</h2>
+            <p class="lead">
+              Every creation holds a story, an artisan’s name, and generations of localized material knowledge.
+            </p>
+            <p>
+              DISOM Marketplace is built on non-exploitative, direct fair-trade principles. When you support an artisan on DISOM, you receive authentic handcrafted pieces—accompanied by maker credits, material transparency, and community provenance.
+            </p>
+            <p style="font-size: 0.95rem; color: rgba(245, 240, 230, 0.7); margin-bottom: 2rem;">
+              *All 29 catalog offerings are displayed as prototype educational entries with verification guidelines before production commercial transactions.
+            </p>
+            <a href="marketplace.html" class="btn btn-primary btn-lg">Explore Marketplace Catalog</a>
+          </div>
+          <div class="editorial-media">
+            <img src="assets/images/hero/marketplace-hero.jpg" alt="Authentic Jharkhand tribal artisan creating traditional mud wall art and handicrafts" onerror="handleImageError(this, 'Tribal Artisan Handicrafts')">
+            <div class="editorial-media-badge">Fair-Trade & Cultural Provenance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 12: CLOSING REFLECTION -->
+    <section class="section" id="closing-reflection">
+      <div class="container text-center">
+        <div style="max-width: 780px; margin: 0 auto;">
+          <span class="tagline">Our Pledge</span>
+          <h2 style="margin-bottom: 1.25rem;">Learning and responsible commerce, together.</h2>
+          <p class="lead" style="margin-bottom: 2rem;">
+            DISOM bridges the digital divide by pairing educational museum documentation with direct artisan economic empowerment. We invite researchers, cultural custodians, and supporters to join this growing archive.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="about.html" class="btn btn-forest">Learn About Our Principles</a>
+            <a href="contact.html" class="btn btn-outline">Contribute a Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Shopping Cart Drawer Modal -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3 id="cartDrawerTitle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          Your Basket <span id="cartCountHeader" style="font-size: 0.9rem; opacity: 0.8;">(0)</span>
+        </h3>
+        <button type="button" class="cart-close-btn" aria-label="Close basket drawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="cart-body" id="cartDrawerBody">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal</span>
+          <span class="cart-subtotal-val" id="cartSubtotal">₹0</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <button type="button" class="btn btn-primary" style="flex: 1;" onclick="window.showToast('Checkout will be connected to a secure payment system in production.')">Proceed to Checkout</button>
+          <button type="button" class="btn btn-outline btn-sm" onclick="window.clearCart()" aria-label="Clear all items">Clear</button>
+        </div>
+        <div class="cart-checkout-notice">
+          This is a frontend prototype. Checkout will be connected to a secure payment system in production.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>DISOM</h3>
+          <p>
+            Jharkhand Tribal Digital Museum — An educational platform and fair-trade archive documenting the living heritage, crafts, and languages of Jharkhand’s Adivasi communities.
+          </p>
+          <p style="font-size: 0.8rem; margin-top: 1rem; color: var(--gold);">
+            "Stories of the forest & people."
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore Museum</a></li>
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="marketplace.html">Responsible Marketplace</a></li>
+            <li><a href="contact.html">Contact & Contribute</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Digital Museum</h4>
+          <ul class="footer-links">
+            <li><a href="explore.html#communities">Community Directory</a></li>
+            <li><a href="explore.html#festivals">Festivals & Seasons</a></li>
+            <li><a href="explore.html#crafts">Crafts & Metallurgy</a></li>
+            <li><a href="explore.html#music">Music & Instruments</a></li>
+            <li><a href="explore.html#sources">Sources & Documentation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Ethics & Heritage</h4>
+          <ul class="footer-links">
+            <li><a href="about.html#principles">The 5 Core Principles</a></li>
+            <li><a href="about.html#fair-trade">Fair-Trade Charter</a></li>
+            <li><a href="about.html#diversity">Diversity Statement</a></li>
+            <li><a href="contact.html#cultural-correction">Submit Cultural Correction</a></li>
+            <li><a href="marketplace.html#artisan-onboard">Artisan Onboarding</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 DISOM — Jharkhand Tribal Digital Museum. All rights reserved.</div>
+        <div>Educational &amp; Cultural Prototype &bull; <a href="https://builtbyamos.in/">Built by Amos</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

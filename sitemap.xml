@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://disomthetribalshub.great-site.net/</loc>
+    <image:image>
+      <image:loc>https://disomthetribalshub.great-site.net/assets/images/hero/hero-forest.jpg</image:loc>
+      <image:title>DISOM: Jharkhand Adivasi culture and tribal heritage</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://disomthetribalshub.great-site.net/explore.html</loc>
+    <image:image>
+      <image:loc>https://disomthetribalshub.great-site.net/assets/images/hero/hero-forest.jpg</image:loc>
+      <image:title>Explore Jharkhand Adivasi communities and culture</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://disomthetribalshub.great-site.net/about.html</loc>
+    <image:image>
+      <image:loc>https://disomthetribalshub.great-site.net/assets/Team/DISOM_TEAM.png</image:loc>
+      <image:title>DISOM student team from Government Polytechnic, Latehar</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://disomthetribalshub.great-site.net/marketplace.html</loc>
+    <image:image>
+      <image:loc>https://disomthetribalshub.great-site.net/assets/images/hero/marketplace-hero.jpg</image:loc>
+      <image:title>Jharkhand tribal handicrafts and Adivasi crafts</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://disomthetribalshub.great-site.net/contact.html</loc>
+    <image:image>
+      <image:loc>https://disomthetribalshub.great-site.net/assets/images/culture/museum-archive.jpg</image:loc>
+      <image:title>DISOM cultural documentation and archive</image:title>
+    </image:image>
+  </url>
+</urlset>
